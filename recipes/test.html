@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Card</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #cce7ff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .recipe-card {
+            background: white;
+            padding: 20px;
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .recipe-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .section {
+            background: #e3f2fd;
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .section h3 {
+            margin: 0 0 5px;
+        }
+
+        .copy-btn {
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+            padding: 8px;
+            border: none;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .copy-btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="recipe-card">
+        <h2>Taco in a Bag Recipe</h2>
+        <img src="your-image.jpg" alt="Taco in a Bag">
+
+        <div class="section">
+            <h3>Description</h3>
+            <p>I love these walking taco bags! The chip bag serves as a shell for the tacos.</p>
+        </div>
+
+        <div class="section">
+            <h3>Ingredients</h3>
+            <ul id="ingredients-list">
+                <li>1 pound ground beef</li>
+                <li>3/4 cup water</li>
+                <li>1 (1 ounce) package taco seasoning mix</li>
+                <li>2 (2.5 ounce) packages corn chips</li>
+                <li>2 cups shredded lettuce</li>
+                <li>1 cup shredded Cheddar cheese</li>
+                <li>1 chopped fresh tomato</li>
+                <li>½ cup sour cream</li>
+                <li>½ cup salsa</li>
+            </ul>
+            <button class="copy-btn" onclick="copyIngredients()">Copy Ingredients</button>
+        </div>
+    </div>
+
+    <script>
+        function copyIngredients() {
+            let ingredients = document.getElementById("ingredients-list").innerText;
+            navigator.clipboard.writeText(ingredients).then(() => {
+                alert("Ingredients copied to clipboard!");
+            });
+        }
+    </script>
+</body>
+
+</html>
