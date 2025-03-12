@@ -11,71 +11,90 @@
 
 <body>
 
-    <div class="card">
-        <h1>fried rice recipes</h1>
-        <div><a href="../index.html"> Home </a></div>
 
+    <div class="recipe-card">
 
-        <img src="../images/Fried-Rice-Hero.webp" alt="f-rice" width="auto" height="60">
+        <!-- title Card -->
+        <h2>Fried rice</h2>
+        <a class="test-link" href="../index.html">Home</a>
 
-        <h2>ingredients</h2>
-        <ul>
-            <li><strong>Cooked, chilled rice:&nbsp;</strong>Any kind of white or brown rice will do. Just be sure that
-                it is cooked&nbsp;(I always cook mine in this <a href="https://amzn.to/4eKOfYx" target="_blank"
-                    rel="noopener nofollow sponsored">rice cooker</a>, which works like a charm) and thoroughly chilled
-                (in a sealed container in the refrigerator) before adding it to your hot skillet. Again, freshly-cooked
-                rice&nbsp;<em>will not work well</em> in this recipe.</li>
-            <li><strong>Eggs:&nbsp;</strong>Which add great flavor, texture and protein.</li>
-            <li><strong>Carrots, onions, green onions and peas:&nbsp;</strong>This is the base mix of veggies that I
-                always use for fried rice, but feel free to add in other stir-fry veggies you love (see ideas below).
-            </li>
-            <li><strong>Garlic:&nbsp;</strong>Freshly-minced.</li>
-            <li><strong>Soy sauce:&nbsp;</strong>I created this recipe using low-sodium soy sauce. So add less if you’re
-                using traditional soy sauce.</li>
-            <li><strong>Oyster sauce:</strong>&nbsp;This is a major flavor booster in fried rice and (don’t worry)
-                doesn’t taste like oysters. You can find it in the Asian section of grocery stores, or order it on <a
-                    href="https://amzn.to/488jsSK" target="_blank"
-                    rel="noopener nofollow sponsored">Amazon</a>.<strong>&nbsp;</strong></li>
-            <li><strong>Toasted sesame oil:&nbsp;</strong>The finishing touch in this recipe, which is a must. You can
-                also find it in the Asian section of grocery stores, or order it on&nbsp;<a
-                    href="https://amzn.to/488yBUe" target="_blank" rel="noopener nofollow sponsored">Amazon</a>.</li>
-            <li><strong>Butter:&nbsp;</strong>My favorite way to stir fry rice.</li>
-        </ul>
+        <!-- images -->
+        <img src="../images/Fried-Rice-Hero.webp" alt="f-rice" alt="fried-rice">
 
-        <h2>steps</h2>
+        <!-- Description -->
+        <div class="section">
+            <h3>Fried rice is rice that is fried</h3>
+        </div>
 
-        <ol>
+        <!-- Ingredients -->
+        <div class="section">
+            <h3>Ingredients</h3>
+            <ul id="ingredients-list">
+                <li>2 cups cooked, chilled rice (white or brown)</li>
+                <li>2 large eggs (beaten)</li>
+                <li>1 cup mixed veggies (carrots, onions, green onions, peas)</li>
+                <li>3 cloves garlic (minced)</li>
+                <li>3 tbsp low-sodium soy sauce (reduce if using regular soy sauce)</li>
+                <li>1 tbsp oyster sauce</li>
+                <li>1 tbsp toasted sesame oil</li>
+                <li>2 tbsp butter</li>
+            </ul>
+            <button class="copy-btn" onclick="copyIngredients()">Copy Ingredients</button>
+        </div>
 
-            <li><strong>Scramble eggs: </strong>
-                Using a small pat of butter, scramble some eggs in a large sauté pan,
-                breaking them into small pieces as you go. Then transfer the eggs to a separate plate, and set aside.
-            </li>
+        <!-- steps -->
+        <div class="section">
+            <h3>Steps</h3>
 
-            <li><strong>Sauté veggies and garlic: </strong>
-                Return your sauté pan to the heat, and sauté&nbsp;the onions,
-                carrots, peas and garlic&nbsp;until soft and cooked through.
-            </li>
-            <li><strong>Stir fry rice:&nbsp;</strong>
-                Then&nbsp;turn the burner to high heat. Scooch the veggies over to
-                one side of the pan, melt the remaining butter in the other half, and add the chilled rice, soy sauce,
-                and oyster sauce (if using). Then stir to combine with the veggies and&nbsp;continue sautéing the rice,
-                stirring every 15-20 seconds or so for 3 minutes, or until you notice the rice and veggies starting to
-                brown slightly.
-            </li>
-            <li><strong>Remove pan from heat.</strong>&nbsp; 
-                And stir in your green onions, sesame oil, and scrambled
-                eggs.
-            </li>
-            <li><strong>Taste and season. </strong> 
-                Give the rice a taste, and season with salt and pepper, plus any
-                extra soy sauce or sesame oil if needed.
-            </li>
-            <li>
-                <strong>Serve! </strong>Then dish it up and serve nice and warm!
-            </li>
-        </ol>
-
+            <ol>
+                <li>
+                    <strong>Prepare Your Rice</strong><br>
+                    Ensure your rice is thoroughly chilled before starting. Freshly cooked rice may turn mushy.
+                </li>
+                <li>
+                    <strong>Cook the Eggs</strong><br>
+                    Heat <strong>1 tbsp butter</strong> in a large skillet or wok over medium-high heat.<br>
+                    Pour in the beaten eggs and cook, stirring constantly, until scrambled. Transfer to a plate and set
+                    aside.
+                </li>
+                <li>
+                    <strong>Cook the Veggies</strong><br>
+                    In the same pan, melt the remaining <strong>1 tbsp butter</strong>.<br>
+                    Add <strong>onions</strong>, <strong>carrots</strong>, and <strong>garlic</strong>. Sauté for 3-4
+                    minutes until softened.<br>
+                    Add <strong>peas</strong> and <strong>green onions</strong>, cooking for another 2 minutes.
+                </li>
+                <li>
+                    <strong>Add the Rice</strong><br>
+                    Increase heat to high and add your <strong>chilled rice</strong>. Stir-fry for 3-4 minutes until the
+                    rice is heated through and slightly crispy.
+                </li>
+                <li>
+                    <strong>Season the Rice</strong><br>
+                    Add the cooked eggs back in.<br>
+                    Pour in the <strong>soy sauce</strong> and <strong>oyster sauce</strong>, stirring to coat
+                    everything evenly.
+                </li>
+                <li>
+                    <strong>Final Touch</strong><br>
+                    Drizzle with <strong>toasted sesame oil</strong> for that rich, nutty flavor. Stir well.
+                </li>
+                <li>
+                    <strong>Serve</strong><br>
+                    Garnish with extra green onions if desired and serve hot!
+                </li>
+            </ol>
+        </div>
     </div>
 </body>
+
+<script>
+    function copyIngredients() {
+        let ingredients = document.getElementById("ingredients-list").innerText;
+        navigator.clipboard.writeText(ingredients).then(() => {
+            alert("Ingredients copied to clipboard!");
+        });
+    }
+</script>
 
 </html>
